@@ -1,0 +1,57 @@
+<h2>Add a new product</h2>
+
+<div class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.name class="form-control" placeholder="The name of the product"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Category</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.category class="form-control" placeholder="The category of the product"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Retail Pricing</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.retail-price class="form-control" placeholder="Retail pricing of the product"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Wholesale Pricing</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.wholesale-price class="form-control" placeholder="Wholesale pricing of the product"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Image(s)</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.image class="form-control" placeholder="Upload image(s) of the product"}}
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Leather Options</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.leather-colors class="form-control" placeholder="Leather options for the product"}}
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Hardware Options</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.hardware-colors class="form-control" placeholder="Hardware options of the product"}}
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Sizing</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.sizing class="form-control" placeholder="Sizing of the product"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" {{action 'saveProduct' model}}>Add to product list</button>
+    </div>
+  </div>
+</div>

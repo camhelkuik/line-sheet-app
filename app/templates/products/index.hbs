@@ -1,0 +1,18 @@
+<h2>All Products</h2>
+
+{{#each model as |product|}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{product.name}}</h3>
+    </div>
+    <div class="panel-body">
+      <p>Category: {{product.category}}</p>
+      <p>Retail Price: {{product.retail-price}}</p>
+      <p>Wholesale Price: {{product.wholesale-price}}</p>
+      <p>Images: {{product.images}}</p>
+      <p>Leather Options: {{product.leather-colors}}</p>
+      <p>Hardware Options: {{product.hardware-colors}}</p>
+      <p>Sizing: {{product.sizing}}</p>
+    </div>
+  </div>
+{{/each}}
